@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Arip</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Memuat file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="shadow-lg bg-white sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-emerald-600">
+                <a href="#home">QA Portfolio</a>
+            </h1>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Tentang</a>
+                <a href="#skills" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Keahlian</a>
+                <a href="#contact" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Kontak</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 rounded-lg hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4 shadow-inner">
+            <a href="#about" class="block py-2 text-gray-700 hover:bg-gray-50 border-b">Tentang</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:bg-gray-50 border-b">Keahlian</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:bg-gray-50">Kontak</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+
+        <!-- Home -->
+        <section id="home" class="text-center py-20 bg-white rounded-xl shadow-2xl mb-16 border-t-4 border-emerald-500">
+            <img src="https://placehold.co/150x150/10b981/ffffff?text=FOTO"
+                 class="rounded-full w-36 h-36 mx-auto object-cover border-4 border-white shadow-md mb-6 hover:scale-105 transition" />
+
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">Halo, Saya [Nama Anda]</h2>
+            <p class="text-xl text-gray-600 font-light mb-8">
+                Quality Assurance Enthusiast & Mahasiswa Implementasi Pengujian Perangkat Lunak
+            </p>
+            <a href="#contact" class="inline-block px-8 py-3 bg-emerald-600 text-white font-semibold rounded-full shadow-lg hover:bg-emerald-700 transition">Hubungi Saya</a>
+        </section>
+
+        <!-- Tentang -->
+        <section id="about" class="py-12 mb-16">
+            <h3 class="text-3xl font-bold mb-10 section-title">Tentang Saya</h3>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-gray-300">
+                <p class="text-lg text-gray-700">
+                    Saya adalah calon *Software Quality Engineer* dengan fokus mendalam pada mata kuliah Implementasi Pengujian Perangkat Lunak.
+                </p>
+
+                <p class="text-lg text-gray-700 mt-4">
+                    Saya menguasai BVA, EP, dan familiar dengan Selenium, Postman, dan GitHub Deployment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Keahlian -->
+        <section id="skills" class="py-12 mb-16">
+            <h3 class="text-3xl font-bold mb-10 section-title">Keahlian Pengujian</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl border-t-4 border-sky-500">
+                    <h4 class="font-semibold text-xl text-sky-600 mb-2">Perancangan Kasus Uji</h4>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-1">
+                        <li>BVA</li>
+                        <li>EP</li>
+                        <li>Decision Table</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl border-t-4 border-yellow-500">
+                    <h4 class="font-semibold text-xl text-yellow-600 mb-2">Tingkat & Jenis Uji</h4>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-1">
+                        <li>Unit Testing</li>
+                        <li>Integration Testing</li>
+                        <li>Regression Testing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl border-t-4 border-emerald-500">
+                    <h4 class="font-semibold text-xl text-emerald-600 mb-2">Otomasi & Tools</h4>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-1">
+                        <li>Selenium</li>
+                        <li>Postman</li>
+                        <li>GitHub, Vercel, Netlify</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="contact" class="py-12">
+            <h3 class="text-3xl font-bold mb-10 section-title">Kontak & Jaringan</h3>
+
+            <div class="bg-white p-8 rounded-xl shadow-2xl max-w-2xl mx-auto">
+
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    Mari terhubung dan berkolaborasi dalam proyek Pengujian Perangkat Lunak!
+                </p>
+
+                <div class="space-y-4 text-center">
+                    <div class="flex justify-center space-x-3 text-lg">
+                        <span class="text-2xl text-emerald-500">📧</span>
+                        <a href="mailto:[email_anda]" class="text-gray-700 hover:text-emerald-600">[email_anda]</a>
+                    </div>
+
+                    <div class="flex justify-center space-x-3 text-lg">
+                        <span class="text-2xl text-emerald-500">🔗</span>
+                        <a href="https://github.com/[username]" class="text-gray-700 hover:text-emerald-600">GitHub: /[username]</a>
+                    </div>
+
+                    <div class="flex justify-center space-x-3 text-lg">
+                        <span class="text-2xl text-emerald-500">💼</span>
+                        <a href="https://linkedin.com/in/[profil]" class="text-gray-700 hover:text-emerald-600">LinkedIn: /[profil]</a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="contact-form" class="mt-10 p-6 bg-gray-50 rounded-lg border-t">
+                    <p id="form-message" class="hidden p-3 mb-4 rounded-lg text-center font-semibold"></p>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-1">Nama</label>
+                        <input type="text" id="name" required class="w-full px-4 py-2 border rounded-lg focus:ring-emerald-500">
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700">
+                        Kirim Pesan (Simulasi)
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+        <p>Dibangun untuk Tugas IPL &copy; 2025 Muhammad Arip</p>
+    </footer>
+
+    <!-- Memuat file JS eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
